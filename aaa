@@ -109,7 +109,7 @@
   </div>
 
   <div class="easter-egg" onclick="document.getElementById('hidden-msg').style.display = 'block'">
-    Click your birthdate if you dare...
+    Click your birthdate if you dare
   </div>
   <div id="hidden-msg">Special access granted. Use wisely 😏</div>
 
