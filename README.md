@@ -1,1 +1,119 @@
 # happy-birthday-Mommy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #ffe6f0, #fff4fa);
+      color: #333;
+      overflow-x: hidden;
+    }
+    .hero {
+      background: linear-gradient(to right, #ff66b2, #ff99cc);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+      animation: pop 1s ease;
+    }
+    .confetti {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .confetti span {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: #fff;
+      opacity: 0.8;
+      animation: fall 4s linear infinite;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .letter {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      white-space: pre-wrap;
+      font-size: 1.1em;
+      line-height: 1.5em;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+    .easter-egg {
+      text-align: center;
+      margin-top: 20px;
+      color: #ff3399;
+      cursor: pointer;
+    }
+    #hidden-msg {
+      display: none;
+      text-align: center;
+      color: #cc0066;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    @keyframes pop {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes fall {
+      0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(600px) rotate(360deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Happy Birthday, Mommy 🎉</h1>
+    <p>You're one of a kind. So here's something unique just for you.</p>
+    <div class="confetti">
+      <span style="left:10%; animation-delay: 0s;"></span>
+      <span style="left:20%; animation-delay: 1s;"></span>
+      <span style="left:30%; animation-delay: 2s;"></span>
+      <span style="left:40%; animation-delay: 0.5s;"></span>
+      <span style="left:50%; animation-delay: 1.5s;"></span>
+      <span style="left:60%; animation-delay: 0.2s;"></span>
+      <span style="left:70%; animation-delay: 1.2s;"></span>
+      <span style="left:80%; animation-delay: 0.8s;"></span>
+      <span style="left:90%; animation-delay: 1.8s;"></span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="letter">
+      Hey Mommy, I didn’t know what to get you this year. Nothing felt worthy of you — not a gift, not a flower, not even a song. And then I remembered: you don’t need much. You just need something made with love. Just for you. So I made a little web, coming straight from my heart ❤️ Here it is. A space that’s yours. A quiet little world you can open anytime and smile. No filter. No pressure. Just something soft — and a little wild — like you. You’ve always had this way of making everything feel exciting without even trying. Just being near you flips all my switches. You’ve ruined me in the best ways possible. So if you ever feel like everything’s too loud, too boring, or too normal... Just call. I’ll always find a way to respond. Just say the word — and I’ll be there. Happy birthday, Mommy. Have the best day — and don’t forget to leave me some cake 😉❤️❤️
+    </div>
+  </div>
+
+  <div class="easter-egg" onclick="document.getElementById('hidden-msg').style.display = 'block'">
+    Click your birthdate if you dare...
+  </div>
+  <div id="hidden-msg">Special access granted. Use wisely 😏</div>
+
+  <div class="footer">Made with love & chaos</div>
+</body>
+</html>
